@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowUpRight, Star } from "lucide-react";
 import { projects } from "@/data/portfolio";
+import { cn } from "@/lib/utils";
 import { Section, SectionHeading } from "../ui/section";
 import { RevealGroup, RevealItem } from "../ui/reveal";
 import { GlassCard } from "../ui/glass-card";
@@ -23,9 +24,11 @@ export function Projects() {
 
       <RevealGroup className="mt-20 grid gap-6 lg:grid-cols-2" stagger={0.12}>
         {ordered.map((project) => (
+          // min-w-0 stops a long project name (grid items default to
+          // min-width:auto) from widening the track past the viewport.
           <RevealItem
             key={project.slug}
-            className={project.featured ? "lg:col-span-2" : undefined}
+            className={cn("min-w-0", project.featured && "lg:col-span-2")}
           >
             <Link href={`/projects/${project.slug}`} className="block h-full">
               <GlassCard className="h-full p-8 md:p-10">
@@ -50,9 +53,12 @@ export function Projects() {
                 </div>
 
                 <h3
-                  className={`mt-8 font-semibold tracking-tight text-white ${
-                    project.featured ? "text-4xl md:text-6xl" : "text-3xl md:text-4xl"
-                  }`}
+                  className={cn(
+                    "mt-8 break-words font-semibold tracking-tight text-white",
+                    project.featured
+                      ? "text-3xl sm:text-4xl md:text-6xl"
+                      : "text-2xl sm:text-3xl md:text-4xl",
+                  )}
                 >
                   {project.name}
                 </h3>

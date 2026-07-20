@@ -48,9 +48,14 @@ function CountUp({ value }: { value: string }) {
 export function Achievements() {
   return (
     <Section className="py-20 md:py-24">
-      <RevealGroup className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-5">
+      {/* Centred flex-wrap rather than a fixed column count: the row stays
+          balanced whatever number of achievements is in the data. */}
+      <RevealGroup className="flex flex-wrap justify-center gap-4">
         {achievements.map((a) => (
-          <RevealItem key={a.label}>
+          <RevealItem
+            key={a.label}
+            className="w-[calc(50%-0.5rem)] md:w-[calc(33.333%-0.667rem)] lg:w-[220px]"
+          >
             <GlassCard className="h-full p-6 text-center md:p-8">
               <p className="text-4xl font-semibold tracking-tight text-gradient transition-transform duration-300 group-hover:scale-105 md:text-5xl">
                 <CountUp value={a.value} />

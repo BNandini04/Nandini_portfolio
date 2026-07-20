@@ -23,13 +23,20 @@ html {
   scroll-behavior: smooth;
   /* Offset anchored sections so the fixed nav never covers a heading. */
   scroll-padding-top: 6rem;
+  /*
+   * Wide decorative glows are centred with left-1/2 and spill past narrow
+   * viewports. `clip` contains them without making <html> a scroll container
+   * the way `hidden` would — and it must be set here, not only on <body>,
+   * or the overflow propagates up and still widens the page.
+   */
+  overflow-x: clip;
 }
 
 body {
   background-color: var(--base);
   color: #f9fafb;
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 ::selection {

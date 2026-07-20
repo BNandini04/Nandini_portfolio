@@ -233,7 +233,6 @@ export const achievements = [
   { value: "3+", label: "Production Products" },
   { value: "16+", label: "Months Experience" },
   { value: "2", label: "Promotions" },
-  { value: "1", label: "Revenue Generating Product" },
   { value: "100%", label: "End-to-End Ownership" },
 ] as const;
 

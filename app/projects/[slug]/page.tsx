@@ -74,7 +74,7 @@ export default async function ProjectPage({ params }: Params) {
               <Badge>{project.category}</Badge>
             </div>
 
-            <h1 className="mt-8 text-balance text-5xl font-semibold tracking-tight text-gradient md:text-7xl lg:text-8xl">
+            <h1 className="mt-8 break-words text-balance text-4xl font-semibold tracking-tight text-gradient sm:text-5xl md:text-7xl lg:text-8xl">
               {project.name}
             </h1>
 
