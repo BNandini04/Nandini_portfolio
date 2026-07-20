@@ -1,0 +1,78 @@
+{
+  "fallback": "I can answer questions about Nandini's background, her role as CTO at HireHappi, the products she has built (LegalMaiA, ChooseYourCollege, ResumeTailor), and the technologies she works with. Try asking one of the suggested questions — or reach out directly at nandininaidu783@gmail.com.",
+  "entries": [
+    {
+      "id": "who",
+      "keywords": ["who", "nandini", "yourself", "introduce", "bio", "background", "about her", "about you"],
+      "question": "Who is Nandini?",
+      "answer": "B. Nandini is the CTO / Head of Engineering at HireHappi (Emmess Technologies Pvt Ltd), based in Bangalore, India. She is an AI Full Stack Developer and product builder who ships production-grade AI applications — LLM integrations, Retrieval-Augmented Generation and agentic workflows on top of a modern full stack. She moved from a commerce background to a BCA, joined HireHappi as an intern, and reached CTO within 16 months."
+    },
+    {
+      "id": "products",
+      "keywords": ["product", "products", "projects", "built", "build", "portfolio", "work", "shipped"],
+      "question": "What products has she built?",
+      "answer": "Three production products: LegalMaiA — a complete AI operating system for law firms covering the full case lifecycle; ChooseYourCollege.com — a live, revenue-generating AI college discovery platform built on NIRF data and semantic search; and ResumeTailor — an AI resume optimization platform that tailors resumes to specific job descriptions."
+    },
+    {
+      "id": "tech",
+      "keywords": ["tech", "technology", "technologies", "stack", "skills", "tools", "languages", "know"],
+      "question": "What technologies does she know?",
+      "answer": "Frontend: React, Next.js, TypeScript, TailwindCSS. Backend: Node.js, REST APIs, PostgreSQL, MongoDB and vector databases. AI: OpenAI, Gemini, Claude, prompt engineering, RAG, embeddings and vector search. Automation: n8n, GitHub Actions and CI/CD. Day-to-day tooling: Cursor, Claude Code, Gemini, Kiro, VS Code and GitHub."
+    },
+    {
+      "id": "experience",
+      "keywords": ["experience", "career", "job", "role", "cto", "hirehappi", "promotion", "promoted", "years", "long"],
+      "question": "What experience does she have?",
+      "answer": "16 months at HireHappi (Emmess Technologies Pvt Ltd), with two promotions in that window. She joined as an AI Full Stack Developer Intern, converted to a full-time engineer within 3 months, and was then promoted to CTO / Head of Engineering. She owns system architecture, production deployments and the company's AI-first engineering workflows."
+    },
+    {
+      "id": "legalmaia",
+      "keywords": ["legalmaia", "legal", "law", "lawyer", "court", "petition"],
+      "question": "What is LegalMaiA?",
+      "answer": "LegalMaiA is a complete AI operating system for law firms — not just a drafting tool. It manages the entire lifecycle of a legal case through modules for case management, petition generation, AI drafting, hearings, timelines, a document repository, firm management, a citation engine, court records, eCourts integration, analytics and role-based access. It is built on Next.js, TypeScript, PostgreSQL and a vector DB, with RAG over OpenAI, Gemini and Claude, n8n automation and AWS infrastructure."
+    },
+    {
+      "id": "chooseyourcollege",
+      "keywords": ["chooseyourcollege", "college", "nirf", "student", "search platform"],
+      "question": "What is ChooseYourCollege?",
+      "answer": "ChooseYourCollege.com is a live, revenue-generating AI search platform that helps students find the right college. It combines NIRF ranking data, advanced filtering and semantic vector search so students can describe what they want in plain language and get results that match intent, not keywords. It also ships an interactive analytics dashboard. Stack: Next.js, TypeScript, Supabase, PostgreSQL, OpenAI and vector search."
+    },
+    {
+      "id": "resumetailor",
+      "keywords": ["resumetailor", "resume tailor", "ats", "resume optimization"],
+      "question": "What is ResumeTailor?",
+      "answer": "ResumeTailor is an AI-powered resume optimization platform. It parses an existing resume, analyses a target job description, and rewrites the content to match the role — while keeping the output ATS-parseable and human-sounding. Built with Next.js, TypeScript, OpenAI, Supabase and RAG."
+    },
+    {
+      "id": "rag",
+      "keywords": ["rag", "retrieval", "embedding", "embeddings", "vector", "llm", "ai architecture"],
+      "question": "How does she approach AI architecture?",
+      "answer": "RAG-first. Chunking strategy, embeddings and vector search do most of the work grounding model output, with the LLM as the reasoning layer rather than the source of truth. On top of that: structured and evaluated prompts, agentic workflows via n8n, model fallbacks across OpenAI, Gemini and Claude, and cost control at the integration layer."
+    },
+    {
+      "id": "contact",
+      "keywords": ["contact", "email", "hire", "reach", "linkedin", "github", "available", "resume", "cv"],
+      "question": "How can I get in touch?",
+      "answer": "Email is the fastest route: nandininaidu783@gmail.com. Her LinkedIn and GitHub are linked in the contact section at the bottom of this page, along with a downloadable resume."
+    },
+    {
+      "id": "location",
+      "keywords": ["location", "where", "based", "city", "bangalore", "remote"],
+      "question": "Where is she based?",
+      "answer": "Bangalore, India — working with HireHappi (Emmess Technologies Pvt Ltd)."
+    },
+    {
+      "id": "services",
+      "keywords": ["service", "services", "offer", "consult", "freelance", "do"],
+      "question": "What does she do?",
+      "answer": "AI product development, full stack development, RAG implementation, AI automation, LLM integration, prompt engineering, product architecture and deployment — typically end-to-end ownership from problem statement to production."
+    }
+  ],
+  "suggestions": [
+    "Who is Nandini?",
+    "What products has she built?",
+    "What is LegalMaiA?",
+    "What technologies does she know?",
+    "What experience does she have?"
+  ]
+}

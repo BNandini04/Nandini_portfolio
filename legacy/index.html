@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="B. Nandini — Head of Engineering & AI Full Stack Developer based in Bengaluru, India." />
+  <title>B. Nandini | Head of Engineering & AI Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="particles" class="particles-canvas" aria-hidden="true"></canvas>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--1" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--2" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--3" aria-hidden="true"></div>
+  <div class="floating-shapes" aria-hidden="true">
+    <div class="shape shape--1"></div>
+    <div class="shape shape--2"></div>
+    <div class="shape shape--3"></div>
+    <div class="shape shape--4"></div>
+  </div>
+
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#hero" class="nav__logo">
+        <span class="nav__logo-bracket">&lt;</span>N<span class="nav__logo-bracket">/&gt;</span>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certifications">Certs</a></li>
+        <li><a href="#contact" class="nav__cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero section" id="hero">
+      <div class="container hero__inner">
+        <div class="hero__content reveal">
+          <p class="hero__greeting">
+            <span class="hero__status"></span>
+            Available for opportunities
+          </p>
+          <h1 class="hero__name"><span class="gradient-text">B. Nandini</span></h1>
+          <p class="hero__title">
+            <span class="hero__title-line">Head of Engineering</span>
+            <span class="hero__divider">|</span>
+            <span class="hero__title-line hero__title-line--alt">AI Full Stack Developer</span>
+          </p>
+          <p class="hero__location">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+            </svg>
+            Bengaluru, India
+          </p>
+          <p class="hero__tagline">
+            <span id="typedText"></span><span class="typed-cursor">|</span>
+          </p>
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">View Projects</a>
+            <a href="#contact" class="btn btn--outline">Get in Touch</a>
+          </div>
+        </div>
+        <div class="hero__visual reveal reveal--delay">
+          <div class="hero__orbit" aria-hidden="true">
+            <span class="orbit-badge orbit-badge--1">React</span>
+            <span class="orbit-badge orbit-badge--2">Python</span>
+            <span class="orbit-badge orbit-badge--3">AWS</span>
+            <span class="orbit-badge orbit-badge--4">AI</span>
+          </div>
+          <div class="hero__card tilt-card">
+            <div class="hero__card-header">
+              <span class="dot dot--red"></span>
+              <span class="dot dot--yellow"></span>
+              <span class="dot dot--green"></span>
+              <span class="hero__card-filename">nandini.dev</span>
+            </div>
+            <pre class="hero__code"><code><span class="code-keyword">const</span> <span class="code-var">engineer</span> = {
+  <span class="code-key">name</span>: <span class="code-string">"B. Nandini"</span>,
+  <span class="code-key">role</span>: <span class="code-string">"Head of Engineering"</span>,
+  <span class="code-key">stack</span>: [<span class="code-string">"React"</span>, <span class="code-string">"Python"</span>, <span class="code-string">"Cursor"</span>],
+  <span class="code-key">tools</span>: [<span class="code-string">"n8n"</span>, <span class="code-string">"Antigravity"</span>],
+  <span class="code-key">passion</span>: <span class="code-string">"AI-driven products"</span>,
+  <span class="code-key">build</span>() {
+    <span class="code-keyword">return</span> <span class="code-string">"intelligent &amp; scalable"</span>;
+  }
+};</code></pre>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="hero__scroll" aria-label="Scroll to about section">
+        <span>Scroll</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M12 5v14M5 12l7 7 7-7"/>
+        </svg>
+      </a>
+    </section>
+
+    <!-- Tech Marquee -->
+    <div class="marquee-section" aria-hidden="true">
+      <div class="marquee marquee--left">
+        <div class="marquee__track">
+          <span>React</span><span>Python</span><span>Angular</span><span>AWS</span><span>Cursor</span><span>n8n</span><span>Antigravity</span><span>MySQL</span><span>MongoDB</span><span>Java</span><span>AI/ML</span><span>Legal-Tech</span>
+          <span>React</span><span>Python</span><span>Angular</span><span>AWS</span><span>Cursor</span><span>n8n</span><span>Antigravity</span><span>MySQL</span><span>MongoDB</span><span>Java</span><span>AI/ML</span><span>Legal-Tech</span>
+        </div>
+      </div>
+      <div class="marquee marquee--right">
+        <div class="marquee__track">
+          <span>Full Stack</span><span>Leadership</span><span>Automation</span><span>Cloud</span><span>TypeScript</span><span>Node.js</span><span>BeautifulSoup</span><span>DevOps</span><span>System Design</span><span>AI Agents</span><span>Web Apps</span><span>Scalable</span>
+          <span>Full Stack</span><span>Leadership</span><span>Automation</span><span>Cloud</span><span>TypeScript</span><span>Node.js</span><span>BeautifulSoup</span><span>DevOps</span><span>System Design</span><span>AI Agents</span><span>Web Apps</span><span>Scalable</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section__title reveal">About <span class="accent">Me</span></h2>
+        <div class="about__grid">
+          <div class="about__text reveal">
+            <p>
+              I've rapidly grown from a Full Stack Intern to
+              <strong>Head of Engineering</strong> at <strong>LegalMaiA</strong> — a legal-tech AI company —
+              in just over a year. That journey taught me how to ship fast, lead teams, and think in systems.
+            </p>
+            <p>
+              I'm passionate about building <strong>AI-driven web applications</strong> that solve real problems.
+              From architecting full-stack features to guiding engineering strategy, I thrive at the intersection
+              of product, technology, and leadership.
+            </p>
+            <p>
+              When I'm not coding, I'm exploring new AI tools, refining system designs, and mentoring developers
+              to build better, smarter software.
+            </p>
+          </div>
+          <div class="about__stats reveal reveal--delay">
+            <div class="stat-card tilt-card">
+              <span class="stat-card__number" data-count="1" data-suffix="+">0</span>
+              <span class="stat-card__label">Year to Head of Engineering</span>
+            </div>
+            <div class="stat-card tilt-card">
+              <span class="stat-card__number" data-count="4">0</span>
+              <span class="stat-card__label">Companies &amp; Programs</span>
+            </div>
+            <div class="stat-card tilt-card">
+              <span class="stat-card__number">AI</span>
+              <span class="stat-card__label">Legal-Tech Focus</span>
+            </div>
+            <div class="stat-card tilt-card">
+              <span class="stat-card__number">Full Stack</span>
+              <span class="stat-card__label">Engineer &amp; Leader</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section section--alt" id="experience">
+      <div class="container">
+        <h2 class="section__title reveal">Experience <span class="accent">Timeline</span></h2>
+        <div class="timeline">
+          <article class="timeline__item reveal">
+            <div class="timeline__marker"></div>
+            <div class="timeline__card tilt-card glow-card">
+              <div class="timeline__header">
+                <div>
+                  <h3 class="timeline__role">Head of Engineering</h3>
+                  <p class="timeline__company">LegalMaiA</p>
+                </div>
+                <span class="timeline__date">Apr 2026 – Present</span>
+              </div>
+              <p class="timeline__desc">
+                Leading engineering at a legal-tech AI startup — driving technical strategy, team growth,
+                and delivery of intelligent products that transform legal workflows.
+              </p>
+              <div class="timeline__tags">
+                <span>Leadership</span>
+                <span>AI</span>
+                <span>Architecture</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline__item reveal">
+            <div class="timeline__marker"></div>
+            <div class="timeline__card tilt-card glow-card">
+              <div class="timeline__header">
+                <div>
+                  <h3 class="timeline__role">AI Full Stack Developer</h3>
+                  <p class="timeline__company">LegalMaiA</p>
+                </div>
+                <span class="timeline__date">Mar 2025 – Apr 2026</span>
+              </div>
+              <p class="timeline__desc">
+                Built and shipped AI-powered full-stack features using React, Python, and cloud services.
+                Collaborated across product and engineering to deliver scalable legal-tech solutions.
+              </p>
+              <div class="timeline__tags">
+                <span>React</span>
+                <span>Python</span>
+                <span>Full Stack</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline__item reveal">
+            <div class="timeline__marker"></div>
+            <div class="timeline__card tilt-card glow-card">
+              <div class="timeline__header">
+                <div>
+                  <h3 class="timeline__role">Full Stack Intern</h3>
+                  <p class="timeline__company">Prinston Smart Engineers</p>
+                </div>
+                <span class="timeline__date">Internship</span>
+              </div>
+              <p class="timeline__desc">
+                Developed full-stack web applications, gaining hands-on experience with modern frameworks,
+                databases, and deployment workflows.
+              </p>
+              <div class="timeline__tags">
+                <span>JavaScript</span>
+                <span>MySQL</span>
+                <span>Web Dev</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline__item reveal">
+            <div class="timeline__marker"></div>
+            <div class="timeline__card tilt-card glow-card">
+              <div class="timeline__header">
+                <div>
+                  <h3 class="timeline__role">Python Intern</h3>
+                  <p class="timeline__company">Rubixe</p>
+                </div>
+                <span class="timeline__date">Internship</span>
+              </div>
+              <p class="timeline__desc">
+                Worked on Python-based automation and data tasks, strengthening foundations in scripting,
+                problem-solving, and backend development.
+              </p>
+              <div class="timeline__tags">
+                <span>Python</span>
+                <span>Automation</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline__item reveal">
+            <div class="timeline__marker"></div>
+            <div class="timeline__card tilt-card glow-card">
+              <div class="timeline__header">
+                <div>
+                  <h3 class="timeline__role">AWS Training</h3>
+                  <p class="timeline__company">Magic Bus India Foundation</p>
+                </div>
+                <span class="timeline__date">Training Program</span>
+              </div>
+              <p class="timeline__desc">
+                Completed structured AWS cloud training covering core services, deployment patterns,
+                and cloud infrastructure fundamentals.
+              </p>
+              <div class="timeline__tags">
+                <span>AWS</span>
+                <span>Cloud</span>
+                <span>DevOps</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section__title reveal">Featured <span class="accent">Projects</span></h2>
+        <div class="projects__grid">
+          <article class="project-card tilt-card glow-card reveal">
+            <div class="project-card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3 class="project-card__title">E-Blood Bank &amp; Donor Management System</h3>
+            <p class="project-card__desc">
+              A full-featured blood bank platform for managing donors, inventory, and requests —
+              built with a modern React frontend and MySQL backend.
+            </p>
+            <div class="project-card__tags">
+              <span>React</span>
+              <span>MySQL</span>
+              <span>Full Stack</span>
+            </div>
+          </article>
+
+          <article class="project-card tilt-card glow-card reveal reveal--delay">
+            <div class="project-card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/>
+              </svg>
+            </div>
+            <h3 class="project-card__title">Basic Web Scraping</h3>
+            <p class="project-card__desc">
+              Python-based web scraping tool using BeautifulSoup to extract and process structured
+              data from websites for analysis and automation.
+            </p>
+            <div class="project-card__tags">
+              <span>Python</span>
+              <span>BeautifulSoup</span>
+              <span>Automation</span>
+            </div>
+          </article>
+
+          <article class="project-card tilt-card glow-card reveal reveal--delay-2">
+            <div class="project-card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+              </svg>
+            </div>
+            <h3 class="project-card__title">Water Management System</h3>
+            <p class="project-card__desc">
+              End-to-end water resource management application with dashboards, tracking, and
+              reporting — built as a complete full-stack solution.
+            </p>
+            <div class="project-card__tags">
+              <span>Full Stack</span>
+              <span>Web App</span>
+              <span>Dashboard</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <h2 class="section__title reveal">Technical <span class="accent">Skills</span></h2>
+        <div class="skills__grid">
+          <div class="skill-card skill-card--featured tilt-card glow-card reveal">
+            <div class="skill-card__header">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M12 2a4 4 0 0 1 4 4c0 1.95-1.4 3.58-3.25 3.93L12 22l-.75-12.07A4.001 4.001 0 0 1 12 2z"/>
+                <path d="M8.5 8.5l-3 3M15.5 8.5l3 3"/>
+              </svg>
+              <h3>AI Tools</h3>
+              <span class="skill-card__badge">Core</span>
+            </div>
+            <ul class="skill-card__list">
+              <li class="skill-pill--glow">Cursor</li>
+              <li class="skill-pill--glow">n8n</li>
+              <li class="skill-pill--glow">Antigravity</li>
+              <li>AI Agents</li>
+              <li>Automation</li>
+            </ul>
+          </div>
+
+          <div class="skill-card tilt-card glow-card reveal">
+            <div class="skill-card__header">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>
+              </svg>
+              <h3>Frontend</h3>
+            </div>
+            <ul class="skill-card__list">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Angular</li>
+            </ul>
+          </div>
+
+          <div class="skill-card tilt-card glow-card reveal reveal--delay">
+            <div class="skill-card__header">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+              </svg>
+              <h3>Backend</h3>
+            </div>
+            <ul class="skill-card__list">
+              <li>Python</li>
+              <li>Java</li>
+              <li>C++</li>
+            </ul>
+          </div>
+
+          <div class="skill-card tilt-card glow-card reveal reveal--delay">
+            <div class="skill-card__header">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+              </svg>
+              <h3>Databases</h3>
+            </div>
+            <ul class="skill-card__list">
+              <li>MySQL</li>
+              <li>MongoDB</li>
+            </ul>
+          </div>
+
+          <div class="skill-card tilt-card glow-card reveal reveal--delay-2">
+            <div class="skill-card__header">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
+              </svg>
+              <h3>Cloud</h3>
+            </div>
+            <ul class="skill-card__list">
+              <li>AWS</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="section" id="certifications">
+      <div class="container">
+        <h2 class="section__title reveal">Certifications</h2>
+        <div class="certs__grid">
+          <article class="cert-card tilt-card glow-card reveal">
+            <div class="cert-card__badge">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/>
+              </svg>
+            </div>
+            <h3 class="cert-card__title">Infosys Springboard</h3>
+            <p class="cert-card__desc">C Programming, Python, and Object-Oriented Programming</p>
+            <span class="cert-card__issuer">Infosys</span>
+          </article>
+
+          <article class="cert-card tilt-card glow-card reveal reveal--delay">
+            <div class="cert-card__badge">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/>
+              </svg>
+            </div>
+            <h3 class="cert-card__title">DSA in Python</h3>
+            <p class="cert-card__desc">Data Structures &amp; Algorithms using Python</p>
+            <span class="cert-card__issuer">Class Central</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--alt" id="contact">
+      <div class="container">
+        <h2 class="section__title reveal">Get in <span class="accent">Touch</span></h2>
+        <p class="contact__subtitle reveal">Have a project in mind or want to connect? I'd love to hear from you.</p>
+        <div class="contact__grid">
+          <a href="mailto:nandininaidu783@gmail.com" class="contact-card tilt-card glow-card reveal">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/>
+            </svg>
+            <div>
+              <span class="contact-card__label">Email</span>
+              <span class="contact-card__value">nandininaidu783@gmail.com</span>
+            </div>
+          </a>
+
+          <a href="tel:+919876543210" class="contact-card tilt-card glow-card reveal reveal--delay">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <div>
+              <span class="contact-card__label">Phone</span>
+              <span class="contact-card__value">+91 98765 43210</span>
+            </div>
+          </a>
+
+          <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" class="contact-card tilt-card glow-card reveal reveal--delay">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+            <div>
+              <span class="contact-card__label">LinkedIn</span>
+              <span class="contact-card__value">linkedin.com/in/your-profile</span>
+            </div>
+          </a>
+
+          <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" class="contact-card tilt-card glow-card reveal reveal--delay-2">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.395-.135-.345-.72-1.395-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A8.996 8.996 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            <div>
+              <span class="contact-card__label">GitHub</span>
+              <span class="contact-card__value">github.com/your-username</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; 2026 B. Nandini. Built with passion in Bengaluru.</p>
+      <a href="#hero" class="footer__top" aria-label="Back to top">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M12 19V5M5 12l7-7 7 7"/>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, monospace;
+}
+
+/*
+ * Palette lives on :root rather than in @theme on purpose. A @theme key like
+ * `--color-base` would generate a `text-base` colour utility that shadows
+ * Tailwind's built-in `text-base` font size.
+ */
+:root {
+  color-scheme: dark;
+
+  --base: #030712;
+  --surface: #111827;
+  --accent: #4f46e5;
+  --accent-soft: #6366f1;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* Offset anchored sections so the fixed nav never covers a heading. */
+  scroll-padding-top: 6rem;
+}
+
+body {
+  background-color: var(--base);
+  color: #f9fafb;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: rgb(79 70 229 / 0.35);
+}
+
+/* --- Reusable surface treatments ------------------------------------- */
+
+@utility glass {
+  background: linear-gradient(
+    145deg,
+    rgb(255 255 255 / 0.06),
+    rgb(255 255 255 / 0.02)
+  );
+  border: 1px solid rgb(255 255 255 / 0.08);
+  backdrop-filter: blur(16px);
+}
+
+@utility text-gradient {
+  background: linear-gradient(120deg, #ffffff 20%, #a5b4fc 60%, #818cf8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Thin, unobtrusive scrollbar to match the dark surface. */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #030712;
+}
+::-webkit-scrollbar-thumb {
+  background: #1f2937;
+  border-radius: 999px;
+  border: 2px solid #030712;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #374151;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
