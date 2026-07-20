@@ -44,14 +44,6 @@ export function Nav() {
       )}
     >
       <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 md:px-10">
-        <Link
-          href="/"
-          className="font-mono text-sm font-medium tracking-tight text-white transition-opacity hover:opacity-70"
-        >
-          {profile.name}
-          <span className="text-indigo-500">.</span>
-        </Link>
-
         <div className="hidden items-center gap-1 md:flex">
           {links.map((l) => (
             <Link
@@ -70,12 +62,13 @@ export function Nav() {
           </ButtonLink>
         </div>
 
+        {/* ml-auto keeps it right-aligned on mobile, where it is the only child. */}
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
           aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
-          className="rounded-lg p-2 text-gray-300 transition-colors hover:bg-white/5 hover:text-white md:hidden"
+          className="ml-auto rounded-lg p-2 text-gray-300 transition-colors hover:bg-white/5 hover:text-white md:hidden"
         >
           {open ? <X size={20} /> : <Menu size={20} />}
         </button>
