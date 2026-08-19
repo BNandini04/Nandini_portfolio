@@ -1,9 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { aboutStatement, journey } from "@/data/portfolio";
+import { GraduationCap } from "lucide-react";
+import { aboutStatement, education, journey } from "@/data/portfolio";
 import { Section, SectionHeading } from "../ui/section";
-import { Reveal } from "../ui/reveal";
+import { Reveal, RevealGroup, RevealItem } from "../ui/reveal";
+import { GlassCard } from "../ui/glass-card";
 
 export function About() {
   return (
@@ -59,6 +61,33 @@ export function About() {
           </p>
         ))}
       </Reveal>
+
+      <div className="mt-20">
+        <Reveal>
+          <h3 className="font-mono text-xs uppercase tracking-[0.25em] text-indigo-400">
+            Education
+          </h3>
+        </Reveal>
+
+        <RevealGroup className="mt-8 grid gap-4 md:grid-cols-2">
+          {education.map((e) => (
+            <RevealItem key={e.qualification}>
+              <GlassCard className="flex h-full items-start gap-4 p-6">
+                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-indigo-500/20 bg-indigo-500/10">
+                  <GraduationCap size={18} className="text-indigo-300" />
+                </span>
+                <div>
+                  <p className="text-pretty font-medium text-white">
+                    {e.qualification}
+                  </p>
+                  <p className="mt-1 text-sm text-gray-400">{e.institution}</p>
+                  <p className="mt-1 font-mono text-xs text-gray-600">{e.period}</p>
+                </div>
+              </GlassCard>
+            </RevealItem>
+          ))}
+        </RevealGroup>
+      </div>
     </Section>
   );
 }

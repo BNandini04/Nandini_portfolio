@@ -15,7 +15,7 @@ export function Experience() {
 
       <div className="mt-20 space-y-8">
         {experience.map((job) => (
-          <Reveal key={job.company}>
+          <Reveal key={job.role}>
             <GlassCard className="p-8 md:p-12">
               <div className="flex flex-wrap items-start justify-between gap-6">
                 <div>
@@ -23,8 +23,20 @@ export function Experience() {
                     <h3 className="text-3xl font-semibold text-white md:text-4xl">
                       {job.company}
                     </h3>
-                    <span className="inline-flex items-center gap-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-300">
-                      <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
+                    <span
+                      className={
+                        job.current
+                          ? "inline-flex items-center gap-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-300"
+                          : "inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium text-gray-400"
+                      }
+                    >
+                      <span
+                        className={
+                          job.current
+                            ? "h-1.5 w-1.5 rounded-full bg-emerald-400"
+                            : "h-1.5 w-1.5 rounded-full bg-gray-500"
+                        }
+                      />
                       {job.period}
                     </span>
                   </div>

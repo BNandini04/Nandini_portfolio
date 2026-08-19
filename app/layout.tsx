@@ -26,10 +26,11 @@ export const metadata: Metadata = {
   description,
   keywords: [
     "AI Engineer",
-    "Full Stack Developer",
-    "CTO",
+    "AI Full Stack Developer",
+    "Head of Engineering",
     "RAG",
     "LLM",
+    "n8n Automation",
     "Next.js",
     "TypeScript",
     profile.name,

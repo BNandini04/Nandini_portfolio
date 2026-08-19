@@ -1,11 +1,11 @@
 {
-  "fallback": "I can answer questions about Nandini's background, her role as CTO at HireHappi, the products she has built (LegalMaiA, ChooseYourCollege, ResumeTailor), and the technologies she works with. Try asking one of the suggested questions — or reach out directly at nandininaidu783@gmail.com.",
+  "fallback": "I can answer questions about Nandini's background, her role as Head of Engineering at HireHappi, the products she has built (LegalMaiA, ChooseYourCollege, ResumeTailor), the automation pipelines she has engineered, and the technologies she works with. Try asking one of the suggested questions — or reach out directly at nandininaidu783@gmail.com.",
   "entries": [
     {
       "id": "who",
       "keywords": ["who", "nandini", "yourself", "introduce", "bio", "background", "about her", "about you"],
       "question": "Who is Nandini?",
-      "answer": "B. Nandini is the CTO / Head of Engineering at HireHappi (Emmess Technologies Pvt Ltd), based in Bangalore, India. She is an AI Full Stack Developer and product builder who ships production-grade AI applications — LLM integrations, Retrieval-Augmented Generation and agentic workflows on top of a modern full stack. She moved from a commerce background to a BCA, joined HireHappi as an intern, and reached CTO within 16 months."
+      "answer": "B. Nandini is the Head of Engineering at HireHappi (Emmess Technologies Pvt Ltd), based in Bengaluru, Karnataka. She is an AI Full Stack Developer and product builder who ships production-grade AI applications — LLM integrations, Retrieval-Augmented Generation and agentic workflows on top of a modern full stack. She moved from a commerce background to a BCA at St. Francis College, joined HireHappi as an intern in Mar 2025, and became Head of Engineering within 16 months."
     },
     {
       "id": "products",
@@ -17,13 +17,13 @@
       "id": "tech",
       "keywords": ["tech", "technology", "technologies", "stack", "skills", "tools", "languages", "know"],
       "question": "What technologies does she know?",
-      "answer": "Frontend: React, Next.js, TypeScript, TailwindCSS. Backend: Node.js, REST APIs, PostgreSQL, MongoDB and vector databases. AI: OpenAI, Gemini, Claude, prompt engineering, RAG, embeddings and vector search. Automation: n8n, GitHub Actions and CI/CD. Day-to-day tooling: Cursor, Claude Code, Gemini, Kiro, VS Code and GitHub."
+      "answer": "Languages: TypeScript, JavaScript, Python, Java, C++ and C. Frontend: React, Next.js, TypeScript, HTML5, CSS3 and TailwindCSS. Backend: Node.js and REST APIs. Databases: PostgreSQL, MySQL, MongoDB and vector databases. AI: RAG, LLM integration, prompt engineering, ChatGPT, Claude and Gemini. Automation: n8n. DevOps: Git, GitHub and CI/CD. Day-to-day tooling: Cursor, Claude Code, Kiro, Antigravity and VS Code."
     },
     {
       "id": "experience",
       "keywords": ["experience", "career", "job", "role", "cto", "hirehappi", "promotion", "promoted", "years", "long"],
       "question": "What experience does she have?",
-      "answer": "16 months at HireHappi (Emmess Technologies Pvt Ltd), with two promotions in that window. She joined as an AI Full Stack Developer Intern, converted to a full-time engineer within 3 months, and was then promoted to CTO / Head of Engineering. She owns system architecture, production deployments and the company's AI-first engineering workflows."
+      "answer": "16 months at HireHappi (Emmess Technologies Pvt Ltd), with two promotions in that window. She joined as an AI Full Stack Developer Intern in Mar 2025, converted to a full-time engineer within 3 months, and was promoted to Head of Engineering in Apr 2026. She owns technical strategy, system architecture, production deployments and the company's AI-first engineering workflows."
     },
     {
       "id": "legalmaia",
@@ -50,6 +50,18 @@
       "answer": "RAG-first. Chunking strategy, embeddings and vector search do most of the work grounding model output, with the LLM as the reasoning layer rather than the source of truth. On top of that: structured and evaluated prompts, agentic workflows via n8n, model fallbacks across OpenAI, Gemini and Claude, and cost control at the integration layer."
     },
     {
+      "id": "automation",
+      "keywords": ["automation", "automate", "workflow", "workflows", "n8n", "zoho", "whatsapp", "crm", "leads", "lead generation", "content automation"],
+      "question": "What automation work has she done?",
+      "answer": "Two production automation pipelines. First, an AI content creation pipeline covering topic generation, scripting, storyboarding, visual generation, editing, approval and publishing — built with n8n, LLMs, Playwright, ElevenLabs, HeyGen, Higgsfield, Google Drive and WhatsApp, using status-driven workflows with human approval checkpoints. Second, a lead pipeline connecting Meta Ads, WhatsApp CTAs, WhatsApp conversations and Zoho CRM, automating lead creation, qualification, CRM updates and follow-up."
+    },
+    {
+      "id": "education",
+      "keywords": ["education", "degree", "college", "studied", "study", "bca", "graduate", "university", "school", "qualification"],
+      "question": "What is her educational background?",
+      "answer": "Bachelor of Computer Applications (BCA) from St. Francis College, Bengaluru (2021–2024), after Commerce with Computers at St. Jerome's College, Bengaluru (2019–2021). She switched into software from a commerce background and taught herself the full web stack alongside the degree."
+    },
+    {
       "id": "contact",
       "keywords": ["contact", "email", "hire", "reach", "linkedin", "github", "available", "resume", "cv"],
       "question": "How can I get in touch?",
@@ -57,15 +69,15 @@
     },
     {
       "id": "location",
-      "keywords": ["location", "where", "based", "city", "bangalore", "remote"],
+      "keywords": ["location", "where", "based", "city", "bangalore", "bengaluru", "karnataka", "remote"],
       "question": "Where is she based?",
-      "answer": "Bangalore, India — working with HireHappi (Emmess Technologies Pvt Ltd)."
+      "answer": "Bengaluru, Karnataka, India — working with HireHappi (Emmess Technologies Pvt Ltd)."
     },
     {
       "id": "services",
       "keywords": ["service", "services", "offer", "consult", "freelance", "do"],
       "question": "What does she do?",
-      "answer": "AI product development, full stack development, RAG implementation, AI automation, LLM integration, prompt engineering, product architecture and deployment — typically end-to-end ownership from problem statement to production."
+      "answer": "AI product development, full stack development, RAG implementation, AI automation and workflow engineering, LLM integration, prompt engineering, product architecture and deployment — typically end-to-end ownership from problem statement to production."
     }
   ],
   "suggestions": [
@@ -73,6 +85,7 @@
     "What products has she built?",
     "What is LegalMaiA?",
     "What technologies does she know?",
+    "What automation work has she done?",
     "What experience does she have?"
   ]
 }

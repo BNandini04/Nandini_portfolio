@@ -5,23 +5,24 @@
 
 export const profile = {
   name: "B. Nandini",
-  role: "CTO / Head of Engineering",
+  role: "Head of Engineering",
   company: "HireHappi",
   legalEntity: "Emmess Technologies Pvt Ltd",
   experience: "16 Months",
-  location: "Bangalore, India",
+  location: "Bengaluru, Karnataka",
   tagline: "Building AI Products that solve real-world problems.",
-  roles: ["CTO", "AI Full Stack Developer", "Product Builder"],
+  roles: ["Head of Engineering", "AI Full Stack Developer", "Product Builder"],
   intro:
     "I build production-ready AI applications using modern LLMs, Retrieval-Augmented Generation, Agentic Workflows and scalable Full Stack technologies.",
   email: "nandininaidu783@gmail.com",
+  phone: "+91 8792364236",
   linkedin: "https://www.linkedin.com/in/nandinib-naidu",
   // TODO: replace with the real GitHub profile URL.
   github: "https://github.com/your-username",
   resume: "/Nandini_Resume.pdf",
   /** Profile photo in public/. Rendered at the centre of the hero AI orb. */
   avatar: "/profile.jpg",
-  siteUrl: "https://nandini.dev",
+  siteUrl: "https://nandinib-portfolio.netlify.app",
 } as const;
 
 export const journey = [
@@ -46,9 +47,22 @@ export const journey = [
       "Converted to full time within 3 months and took ownership of core AI systems.",
   },
   {
-    stage: "CTO / Head of Engineering",
+    stage: "Head of Engineering",
     detail:
       "Now own architecture, deployments and the engineering direction of the company.",
+  },
+] as const;
+
+export const education = [
+  {
+    qualification: "Bachelor of Computer Applications (BCA)",
+    institution: "St. Francis College, Bengaluru",
+    period: "2021 – 2024",
+  },
+  {
+    qualification: "Commerce with Computers",
+    institution: "St. Jerome's College, Bengaluru",
+    period: "2019 – 2021",
   },
 ] as const;
 
@@ -59,27 +73,30 @@ export const aboutStatement = [
 
 export const skills = [
   {
+    category: "Languages",
+    items: ["TypeScript", "JavaScript", "Python", "Java", "C++", "C"],
+  },
+  {
     category: "Frontend",
-    items: ["React", "Next.js", "TypeScript", "TailwindCSS"],
+    items: ["React", "Next.js", "TypeScript", "HTML5", "CSS3", "TailwindCSS"],
   },
   {
     category: "Backend",
-    items: [
-      "Node.js",
-      "REST APIs",
-      "PostgreSQL",
-      "MongoDB",
-      "Vector Databases",
-    ],
+    items: ["Node.js", "REST APIs"],
+  },
+  {
+    category: "Databases",
+    items: ["PostgreSQL", "MySQL", "MongoDB", "Vector Databases"],
   },
   {
     category: "AI",
     items: [
-      "OpenAI",
-      "Gemini",
-      "Claude",
-      "Prompt Engineering",
       "RAG",
+      "LLM Integration",
+      "Prompt Engineering",
+      "ChatGPT",
+      "Claude",
+      "Gemini",
       "Embeddings",
       "Vector Search",
     ],
@@ -89,8 +106,19 @@ export const skills = [
     items: ["n8n", "GitHub Actions", "CI/CD"],
   },
   {
+    category: "DevOps",
+    items: ["Git", "GitHub", "CI/CD"],
+  },
+  {
     category: "Developer Tools",
-    items: ["Cursor", "Claude Code", "Gemini", "Kiro", "VS Code", "GitHub"],
+    items: [
+      "Cursor",
+      "Claude Code",
+      "Kiro",
+      "Antigravity",
+      "VS Code",
+      "n8n",
+    ],
   },
 ] as const;
 
@@ -98,16 +126,31 @@ export const experience = [
   {
     company: "HireHappi",
     legalEntity: "Emmess Technologies Pvt Ltd",
-    role: "CTO / Head of Engineering",
-    period: "Current",
-    location: "Bangalore, India",
+    role: "Head of Engineering",
+    period: "Apr 2026 – Present",
+    current: true,
+    location: "Bengaluru, Karnataka",
     achievements: [
-      "Promoted from AI Full Stack Developer Intern to Full-Time Engineer within 3 months.",
-      "Promoted to CTO / Head of Engineering.",
-      "Built multiple production AI products.",
-      "Designed complete system architecture.",
-      "Managed production deployments.",
-      "Implemented AI-first engineering workflows.",
+      "Lead technical strategy, product architecture, engineering execution and AI initiatives.",
+      "Own end-to-end software delivery — planning, development, testing, deployment and maintenance.",
+      "Drive AI-first engineering practices using modern LLMs, RAG pipelines, vector search and workflow automation.",
+      "Mentor engineering efforts while keeping the architecture scalable and production ready.",
+    ],
+  },
+  {
+    company: "HireHappi",
+    legalEntity: "Emmess Technologies Pvt Ltd",
+    role: "AI Full Stack Developer (Intern → Full-Time)",
+    period: "Mar 2025 – Apr 2026",
+    current: false,
+    location: "Bengaluru, Karnataka",
+    achievements: [
+      "Converted from internship to full-time on performance within three months.",
+      "Built two production-grade AI products from scratch, owning architecture through deployment.",
+      "Developed scalable full stack applications with React, Next.js, TypeScript, PostgreSQL, APIs and vector databases.",
+      "Designed Retrieval-Augmented Generation pipelines and integrated multiple LLM providers.",
+      "Implemented GitHub workflows and CI/CD pipelines for streamlined deployments.",
+      "Worked extensively with Cursor, Claude Code, Gemini, ChatGPT, Kiro, Antigravity, VS Code and n8n.",
     ],
   },
 ] as const;
@@ -124,6 +167,10 @@ export type Project = {
   modules?: string[];
   tech: string[];
   accent: string;
+  /** Product screenshot in public/, shown in the case-study browser frame. */
+  image: string;
+  /** Alt text for the screenshot — describes what the capture actually shows. */
+  imageAlt: string;
 };
 
 export const projects: Project[] = [
@@ -157,6 +204,9 @@ export const projects: Project[] = [
       "Vector Search",
     ],
     accent: "#4F46E5",
+    image: "/chooseyourcollege.png",
+    imageAlt:
+      "ChooseYourCollege.com landing page with the college search bar and platform statistics.",
   },
   {
     slug: "legalmaia",
@@ -204,6 +254,9 @@ export const projects: Project[] = [
       "AWS",
     ],
     accent: "#6366F1",
+    image: "/legalmaia.png",
+    imageAlt:
+      "LegalMaiA dashboard showing drafting activity, plan usage and recent case drafts.",
   },
   {
     slug: "resumetailor",
@@ -226,12 +279,51 @@ export const projects: Project[] = [
     ],
     tech: ["Next.js", "TypeScript", "OpenAI", "Supabase", "RAG"],
     accent: "#8B5CF6",
+    image: "/resumetailor.png",
+    imageAlt:
+      "ResumeTailor landing page showing the free ATS score check and a sample keyword-match result.",
   },
 ];
 
+/**
+ * Workflow automation work. Lighter weight than `projects` — rendered as a
+ * single section, with no individual detail pages.
+ */
+export const automations = [
+  {
+    title: "AI Content Creation Automation",
+    summary:
+      "An end-to-end AI content pipeline covering topic generation, scripting, storyboarding, visual generation, editing, approval and publishing.",
+    points: [
+      "Built reusable, status-driven workflows with human approval checkpoints to cut manual content production effort.",
+      "Chained LLM generation into media production so a single approved topic runs through to a published asset.",
+    ],
+    tools: [
+      "n8n",
+      "LLMs",
+      "Playwright",
+      "ElevenLabs",
+      "HeyGen",
+      "Higgsfield",
+      "Google Drive",
+      "WhatsApp",
+    ],
+  },
+  {
+    title: "Social Media → WhatsApp → Zoho Lead Automation",
+    summary:
+      "An automated lead generation and qualification pipeline connecting Meta Ads, WhatsApp CTAs, WhatsApp conversations and Zoho CRM.",
+    points: [
+      "Automated lead creation, qualification and CRM updates based on WhatsApp responses.",
+      "Reduced manual lead processing across the full flow: ad acquisition → WhatsApp conversation → qualification → Zoho CRM → follow-up.",
+    ],
+    tools: ["n8n", "Meta Ads", "WhatsApp Business", "Zoho CRM", "Webhooks"],
+  },
+] as const;
+
 export const achievements = [
-  { value: "3+", label: "Production Products" },
-  { value: "16+", label: "Months Experience" },
+  { value: "3", label: "Production Products" },
+  { value: "16", label: "Months Experience" },
   { value: "2", label: "Promotions" },
   { value: "100%", label: "End-to-End Ownership" },
 ] as const;
@@ -292,7 +384,9 @@ export const techStack = [
   "Next.js",
   "Node.js",
   "TypeScript",
+  "Python",
   "PostgreSQL",
+  "MongoDB",
   "Supabase",
   "OpenAI",
   "Gemini",

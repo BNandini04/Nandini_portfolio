@@ -33,6 +33,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
       title: project.name,
       description: project.summary,
       type: "article",
+      images: [{ url: project.image, alt: project.imageAlt }],
     },
   };
 }
@@ -84,7 +85,12 @@ export default async function ProjectPage({ params }: Params) {
           </Reveal>
 
           <Reveal delay={0.15} className="mt-20">
-            <LaptopMockup label={project.name} accent={project.accent} />
+            <LaptopMockup
+              label={project.name}
+              accent={project.accent}
+              image={project.image}
+              alt={project.imageAlt}
+            />
           </Reveal>
         </Section>
 

@@ -1,4 +1,4 @@
-import { Boxes, Bot, Cpu, Server, Wrench } from "lucide-react";
+import { Boxes, Bot, Code2, Cpu, Database, GitBranch, Server, Wrench } from "lucide-react";
 import { skills } from "@/data/portfolio";
 import { Section, SectionHeading } from "../ui/section";
 import { RevealGroup, RevealItem } from "../ui/reveal";
@@ -6,10 +6,13 @@ import { GlassCard } from "../ui/glass-card";
 import { Badge } from "../ui/badge";
 
 const ICONS: Record<string, React.ComponentType<{ size?: number; className?: string }>> = {
+  Languages: Code2,
   Frontend: Boxes,
   Backend: Server,
+  Databases: Database,
   AI: Bot,
   Automation: Cpu,
+  DevOps: GitBranch,
   "Developer Tools": Wrench,
 };
 

@@ -6,7 +6,12 @@ import { brandIcons } from "@/lib/brand-icons";
 import { Section, SectionHeading } from "../ui/section";
 
 /** Short monogram for brands with no available mark (OpenAI, AWS). */
-const MONOGRAM: Record<string, string> = { OpenAI: "AI", AWS: "AWS" };
+const MONOGRAM: Record<string, string> = {
+  OpenAI: "AI",
+  AWS: "AWS",
+  Python: "Py",
+  MongoDB: "MDB",
+};
 
 function TechTile({ name, index }: { name: string; index: number }) {
   const icon = brandIcons[name];
